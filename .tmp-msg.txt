@@ -1,0 +1,3 @@
+chore: 移除一次性推送脚本
+
+仓库只保留 build.mjs 与 inject.mjs；推送流程本身写在 README。
