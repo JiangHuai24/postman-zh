@@ -1,0 +1,9 @@
+{
+  "team_discovery.blank_state.heading": "创建您的团队",
+  "team_discovery.blank_state.subheading": "在 Postman 上与您的团队成员协作。一起构建 API 更快、更有趣。",
+  "team_discovery.title": "团队",
+  "team_discovery.heading": "您可以从您的组织加入的团队",
+  "team_discovery.heading_with_org": "您可以从 @{orgName} 加入的团队",
+  "team_discovery.subheading": "加入团队即可访问 API 资源并立即开始与您的队友协作。",
+  "team_discovery.no_teams": "您还不是任何团队的一员。"
+}

@@ -1,0 +1,30 @@
+{
+  "name": "postman-zh",
+  "version": "0.1.0",
+  "description": "Postman 桌面版简体中文界面注入工具 —— 拦截远程语言包，运行时替换为中文",
+  "private": true,
+  "type": "module",
+  "bin": {
+    "postman-zh": "scripts/inject.mjs"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "inject": "node scripts/inject.mjs",
+    "restore": "node scripts/inject.mjs --restore"
+  },
+  "license": "MIT",
+  "author": "extremity2740938284-create",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/extremity2740938284-create/postman-zh.git"
+  },
+  "keywords": [
+    "postman",
+    "chinese",
+    "i18n",
+    "localization",
+    "electron",
+    "asar",
+    "汉化"
+  ]
+}

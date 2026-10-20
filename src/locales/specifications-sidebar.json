@@ -1,0 +1,16 @@
+{
+  "permission_load.banner_message": "部分规范的权限无法加载。",
+  "permission_load.retry_button": "重试",
+  "entity_type_icon.label": "规范",
+  "bulk_delete.heading": "删除 {count, plural, one {# 个规范} other {# 个规范}}",
+  "bulk_delete.confirmation_line1": "确定要永久删除{count, plural, one {这个规范} other {这 # 个规范}}吗？",
+  "bulk_delete.confirmation_line2": "此操作无法撤销。",
+  "bulk_delete.over_limit_title": "一次最多只能删除 {max} 个规范",
+  "bulk_delete.over_limit_description": "已选择 {specCount} 个规范。请减少到 {max} 个及以内后重试。",
+  "bulk_delete.partial_failure": "已删除 {totalCount} 个规范中的 {deletedCount} 个，{failedCount} 个删除失败。",
+  "bulk_delete.error": "无法删除规范",
+  "bulk_delete.cancel": "取消",
+  "bulk_delete.confirm": "删除",
+  "bulk_delete.summary_label": "{count, plural, one {# 个规范} other {# 个规范}}",
+  "bulk_delete.summary_note": "删除后无法恢复"
+}

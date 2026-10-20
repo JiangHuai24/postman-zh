@@ -1,0 +1,18 @@
+{
+  "short_months.jan": "一月",
+  "short_months.feb": "二月",
+  "short_months.mar": "三月",
+  "short_months.apr": "四月",
+  "short_months.may": "五月",
+  "short_months.jun": "六月",
+  "short_months.jul": "7月",
+  "short_months.aug": "八月",
+  "short_months.sep": "九月",
+  "short_months.oct": "十月",
+  "short_months.nov": "十一月",
+  "short_months.dec": "十二月",
+  "dates.am": "上午",
+  "dates.pm": "下午",
+  "dates.today": "今天",
+  "dates.yesterday": "昨天"
+}

@@ -1,0 +1,7 @@
+{
+  "name.placeholder": "无标题 {entityName}",
+  "summary.placeholder.editable": "添加摘要以概述此 {entityName} 的目的。",
+  "summary.placeholder.readOnly": "尚未添加摘要。",
+  "description.placeholder.no_description": "尚未添加描述。",
+  "description.placeholder.default": "添加 {entityName} 描述"
+}

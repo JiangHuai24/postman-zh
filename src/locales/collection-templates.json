@@ -1,0 +1,18 @@
+{
+  "template_actions.all": "所有模板",
+  "template_actions.search": "搜索",
+  "template_actions.recommended": "受到推崇的",
+  "suggest_templates_button": "建议模板",
+  "view_all_templates": "查看全部",
+  "search_results_heading": "{filter} 的 {results, plural, =1 {# 个结果} other {# 个结果}}",
+  "suggestion_modal.heading": "您想看什么模板？",
+  "suggestion_modal.text": "您的输入将帮助我们为您创建更相关的模板。",
+  "suggestion_modal.placeholder": "例如负载测试和问题跟踪 API",
+  "suggestion_modal.validation_message": "您已超出字符数限制。尝试删除一些文字。",
+  "suggestion_modal.back_button": "后退",
+  "suggestion_modal.submit_button": "提交",
+  "suggestion_modal.toast.success.desc": "感谢您的建议。",
+  "suggestion_modal.toast.rate_limited.title": "我们喜欢你的热情，但是……",
+  "suggestion_modal.toast.rate_limited.desc": "我们仍在处理您之前的建议。您可以在几分钟后重试。",
+  "suggestion_modal.toast.error.desc": "出了点问题。请稍后重试。"
+}

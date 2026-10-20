@@ -1,0 +1,9 @@
+{
+  "mock_delay_selector.simulate_network_delay_label": "模拟固定网络延迟",
+  "mock_delay_selector.no_delay_selected": "无延迟",
+  "mock_delay_selector.custom": "自定义",
+  "mock_delay_selector.duration_display_name": "({duration} 毫秒)",
+  "mock_delay_selector.placeholder": "0 - {max}",
+  "custom_delay_input.validation_message": "请输入 0 到 {max} 毫秒之间的值",
+  "custom_delay_input.duration_metric": "毫秒"
+}

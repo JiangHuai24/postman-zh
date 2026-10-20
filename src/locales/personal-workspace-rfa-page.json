@@ -1,0 +1,10 @@
+{
+  "switch_accounts_cta": "切换账户",
+  "creating_request_heading": "您无权访问此资源",
+  "creating_request_subheading": "请求所有者与您共享此内容。",
+  "pending_request_heading": "您访问此资源的请求正在审核中",
+  "pending_request_subheading": "所有者回复后，我们会通知您。",
+  "submit_cta": "请求访问",
+  "current_sign_in_account_text": "您的登录身份为",
+  "continue_postman_cta": "继续前往 Postman"
+}

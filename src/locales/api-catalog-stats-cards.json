@@ -1,0 +1,4 @@
+{
+  "avg_across_projects": "跨 {count, plural, one {# 个项目} other {# 个项目}}的平均值",
+  "traffic_weighted_avg": "按流量加权的平均值（{trafficCount} / {count, plural, one {# 个项目} other {# 个项目}}）"
+}

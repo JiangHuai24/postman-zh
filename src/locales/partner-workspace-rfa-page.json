@@ -1,0 +1,22 @@
+{
+  "creating_request_heading": "请求访问此合作伙伴工作区",
+  "team_select.label": "选择团队",
+  "team_select.placeholder": "选择团队来访问此工作区",
+  "team_select.members_count": "{count, plural, one {# 位成员} other {# 位成员}}",
+  "options.partner.title": "作为合作伙伴加入",
+  "options.partner.text": "我是与该组织合作的外部合作伙伴。",
+  "options.team_mate.title": "作为队友加入",
+  "options.team_mate.text": "我是拥有此工作区的组织的成员",
+  "partnership_not_allowed.banner_title": "不允许合作伙伴访问",
+  "partnership_not_allowed.banner_description": "您的团队管理员已阻止您的团队的合作伙伴关系。",
+  "add_note_text": "添加备注",
+  "text_area_info_text": "添加注释到工作区管理员",
+  "approved_partner_heading": "快到了！",
+  "approved_partner_subheading_1": "您的请求已获得批准。要获得访问权限，请接受发送到您的电子邮件的合作关系邀请。",
+  "approved_partner_subheading_2": "如果找不到邀请，您可以提交新的访问权限请求。",
+  "approved_partner_raise_new_request_cta": "请求再次访问",
+  "toast_content.switch_account_error.title": "请求已发送",
+  "toast_content.switch_account_error.description": "从帐户菜单切换团队以继续。",
+  "toast_content.switching_account.title": "请求已发送",
+  "toast_content.switching_account.description": "切换到您选择的团队..."
+}

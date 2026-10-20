@@ -1,0 +1,22 @@
+{
+  "page.heading": "验证您的帐户",
+  "page.loading": "正在发送您的验证码...",
+  "page.register_error": "我们现在无法发送验证码。请再试一次。",
+  "registration_failure.continue_cta": "继续前往 Postman",
+  "footer.copyright": "©2025 Postman, Inc. 保留所有权利。",
+  "footer.terms": "使用条款",
+  "footer.privacy": "隐私政策",
+  "form.code_label": "验证码",
+  "form.code_placeholder": "123456",
+  "form.description": "我们已将验证码发送至<bold>{email}</bold>",
+  "form.submit_button": "验证账户",
+  "form.resend_prompt": "没有收到电子邮件？",
+  "form.resend_button": "重新发送代码",
+  "form.resend_button_with_cooldown": "{seconds} 秒后重新发送代码",
+  "form.resend_limit_reached": "您已达到此验证请求的重新发送限制。",
+  "form.restart_button": "发送新代码",
+  "form.session_expired": "您的验证会话已过期。发送新代码以继续。",
+  "form.successful_banner": "成功！",
+  "form.error_code_length": "验证码必须包含六位数字。",
+  "form.error_generic": "出了点问题。请再试一次。"
+}

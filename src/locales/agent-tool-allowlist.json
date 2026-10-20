@@ -1,0 +1,8 @@
+{
+  "approval.send_request_message": "允许 Agent 发送此请求？",
+  "approval.send_named_request_message": "允许 Agent 发送 <0><0>{requestName}</0></0>？",
+  "approval.request_name_fallback": "请求",
+  "approval.allowlist_menu_aria_label": "批准并始终允许选项",
+  "approval.allowlist_option_tooltip": "在此对话中跳过匹配请求的审批",
+  "rules.always_allow_domain": "始终允许 {value}"
+}

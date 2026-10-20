@@ -1,0 +1,20 @@
+{
+  "connected_accounts.orgs_description": "使用第三方应用程序在 Postman 中配置您的组织。 Postman 组织成员可以使用配置的应用程序来设置集成。",
+  "connected_accounts.team_description": "使用第三方应用程序配置 Postman 中的团队。Postman 团队成员可以使用配置的应用程序来设置集成。",
+  "connected_accounts.learn_more": "了解更多关于",
+  "connected_accounts.installed_apps_link_text": "已安装的应用程序",
+  "manage_invite_links.heading": "邀请链接",
+  "manage_invite_links.orgs_description": "用于邀请人员加入您组织的链接。",
+  "manage_invite_links.team_description": "用于邀请人员加入您团队的链接。",
+  "manage_invite_links.admin_links_heading": "管理员生成的链接",
+  "manage_invite_links.non_admin_links_heading": "非管理员生成的链接",
+  "manage_invite_links.expired_links_heading": "已过期的链接",
+  "scim_provisioning.team_description": "When enabled, you can effortlessly onboard and manage Postman team members using your identity provider. Learn more about",
+  "scim_provisioning.orgs_description": "When enabled, you can effortlessly onboard and manage Postman organization members using your identity provider. Learn more about",
+  "domain_capture.team_subheading_part1": "Domains help determine which accounts can be members of your team and be managed by your Admins. Once verified, you can enable account management for team",
+  "domain_capture.orgs_subheading_part1": "Domains help determine which accounts can be members of your organization and be managed by your Admins. Once verified, you can enable account management for organization",
+  "domain_capture.subheading_part2": ". Learn more about",
+  "domain_capture.subheading_link_text": "管理未认领的账户",
+  "manage_domain.back_link_label": "所有域名",
+  "manage_domain.breadcrumb_aria_label": "域管理面包屑"
+}

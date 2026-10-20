@@ -1,0 +1,18 @@
+{
+  "text_area_info_text": "简要说明，帮助工作区管理员批准您的请求……",
+  "add_note_text": "添加备注",
+  "switch_accounts_cta": "切换账户",
+  "go_to_workspace_cta": "前往工作区",
+  "creating_request_heading": "您似乎没有访问权限",
+  "creating_request_subheading": "向工作区管理员发送请求以获取此工作区的访问权限。",
+  "submit_cta": "请求访问权限",
+  "pending_request_heading": "您似乎仍然没有访问权限",
+  "pending_request_subheading": "您访问此工作区的请求正在等待处理。",
+  "current_sign_in_account_text": "您当前登录的账户是",
+  "toast_content.workspace_rfa_sent.title": "请求已发送",
+  "toast_content.workspace_rfa_sent.description": "工作区管理员回复后，您将收到通知。",
+  "toast_content.email_not_verified.title": "请先验证您的账户",
+  "toast_content.email_not_verified.description": "验证完成后，您即可申请加入团队。请查收收件箱中的最新验证邮件。",
+  "toast_content.default_error.title": "请求发送失败",
+  "toast_content.default_error.description": "只是出了点小故障，请重试。"
+}

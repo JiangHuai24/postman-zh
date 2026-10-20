@@ -1,0 +1,22 @@
+{
+  "team_meta.heading": "创建新的团队",
+  "team_meta.subheading": "您将使 API 协作变得更加容易！ 🎉",
+  "team_meta.team_name": "您的团队叫什么名字？",
+  "team_meta.team_name_placeholder": "例如平台 API 团队",
+  "team_meta.questions.team_goal.label": "您的团队主要从事什么工作？",
+  "team_meta.questions.team_goal.options.existing": "一起共享和测试现有 API",
+  "team_meta.questions.team_goal.options.design": "一起设计和构建新的 API",
+  "team_meta.questions.team_goal.options.document": "为 API 文档建立一个中心空间",
+  "team_meta.questions.team_goal.options.other": "其他",
+  "invite_users.heading": "邀请人加入您的团队",
+  "invite_users.add_email_heading": "添加电子邮件地址",
+  "invite_users.add_email_subheading": "一旦您创建团队，我们就会发送邀请。",
+  "invite_users.title": "添加电子邮件地址",
+  "invite_users.subtitle": "一旦您创建团队，我们就会发送邀请。",
+  "step_1": "第 1 步（共 2 步）",
+  "step_2": "第 2 步（共 2 步）",
+  "back": "后退",
+  "cancel": "取消",
+  "continue": "继续",
+  "create_team": "创建团队"
+}

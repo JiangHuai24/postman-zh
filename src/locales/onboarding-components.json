@@ -1,0 +1,19 @@
+{
+  "copy_link.copy_invite_text": "复制邀请链接",
+  "copy_link.copied_text": "已复制",
+  "copy_link.unable_to_generate_text": "生成链接时出现问题。",
+  "copy_link.no_permission_to_copy_text": "您没有管理员权限来执行此操作",
+  "curl_import_modal.heading": "将 cURL 导入到集合中",
+  "curl_import_modal.request_input.placeholder": "例如获取所有用户",
+  "curl_import_modal.request_input.label_text": "请求名称",
+  "curl_import_modal.collection_input.list_placeholder": "选择或创建一个新的集合",
+  "curl_import_modal.collection_input.text_input_placeholder": "新建集合",
+  "curl_import_modal.collection_input.label_text": "集合名称",
+  "curl_import_modal.collection_input.label_info_text": "集合可让您对相关请求进行分组，从而更轻松地访问和运行它们。",
+  "curl_import_modal.secondary_button_text": "导入而不保存",
+  "curl_import_modal.primary_button_text": "导入到集合",
+  "leave_onboarding_confirm_modal.heading": "要离开新手引导设置吗？",
+  "leave_onboarding_confirm_modal.body_text": "离开此页面将丢失集成设置中的进度。确定要继续吗？",
+  "leave_onboarding_confirm_modal.cancel_button_text": "留在此页面",
+  "leave_onboarding_confirm_modal.confirm_button_text": "离开页面"
+}

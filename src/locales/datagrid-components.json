@@ -1,0 +1,14 @@
+{
+  "bulk_action_bar.selected_count": "已选择 {count} 项",
+  "bulk_action_bar.clear_selection": "清除选择",
+  "filter_bar.search_placeholder": "搜索...",
+  "filter_bar.clear_all": "全部清除",
+  "filters_menu.button_label": "筛选",
+  "filters_menu.clear_filters": "清除过滤器",
+  "view_toggle.label": "视图切换",
+  "view_toggle.grid": "网格视图",
+  "view_toggle.list": "列表视图",
+  "actions_cell.more_actions": "更多操作",
+  "select_cell.select_all": "选择全部",
+  "select_cell.select_row": "选择行"
+}

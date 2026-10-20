@@ -1,0 +1,9 @@
+{
+  "spec_list.no_operations": "本规范中未找到任何操作。",
+  "spec_list.no_matching_requests": "未找到匹配的请求。",
+  "collection_tree.no_requests": "此集合没有请求。",
+  "collection_tree.no_matching_requests": "未找到匹配的请求。",
+  "errors.spec_syntax": "所选规范存在语法错误。请修复规范编辑者中的错误，然后重试。",
+  "errors.spec_load_failed": "无法加载操作。请再试一次。",
+  "errors.collection_load_failed": "无法加载集合。请再试一次。"
+}

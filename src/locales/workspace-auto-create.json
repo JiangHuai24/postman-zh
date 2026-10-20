@@ -1,0 +1,13 @@
+{
+  "working.resolving": "正在准备…",
+  "working.creating": "正在创建你的工作区…",
+  "working.redirecting": "正在打开你的工作区…",
+  "working.do_not_close": "只需稍等片刻，请不要关闭此标签页。",
+  "error.title": "无法创建工作区",
+  "error.generic": "出错了，请重试。",
+  "error.retry": "重试",
+  "error.go_to_workspaces": "前往你的工作区",
+  "signed_out.title": "请登录后继续",
+  "signed_out.description": "需要先登录 Postman，我们才能为你创建工作区。",
+  "signed_out.sign_in": "登录"
+}

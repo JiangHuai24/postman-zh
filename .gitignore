@@ -1,0 +1,4 @@
+scratch/
+node_modules/
+*.log
+app.asar.orig-backup
