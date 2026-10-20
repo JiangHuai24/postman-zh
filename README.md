@@ -44,6 +44,15 @@ node scripts/inject.mjs --restore
 - 需要先退出 Postman，否则文件被占用无法写入。
 - 若在 Electron 相关环境（如某些 IDE、工具链）里启动，注意环境变量 ELECTRON_RUN_AS_NODE：为 1 时 Postman 会以纯 Node 模式启动并立即退出，表现为打不开。
 
+## 两层汉化
+
+| 层 | 覆盖对象 | 做法 |
+| --- | --- | --- |
+| 语言包层 | 官方 en-US 语言包里的 20448 条词条 | 拦截 fetch/XHR 响应替换 |
+| DOM 兜底层 | 硬编码 / 服务端下发的文案（侧栏面板名 COLLECTIONS/SPECS、按钮 Upgrade/Connect、New Collection 等） | MutationObserver 整串精确匹配替换，跳过输入框与代码编辑器 |
+
+DOM 词典在 src/dom-zh.json，可自行增补。
+
 ## 目录结构
 
 ```
@@ -52,7 +61,8 @@ postman-zh/
 │   ├── build.mjs     # 合并 src/locales/*.json → dist/pm-chinese-runtime.js
 │   └── inject.mjs    # 备份 / 解包 / 注入 / 重打包 app.asar，含 --restore
 ├── src/
-│   ├── pm-chinese.js # 运行时钩子源码（含 __PM_ZH_DATA__ 占位）
+│   ├── pm-chinese.js # 运行时钩子源码（语言包层 + DOM 兜底层）
+│   ├── dom-zh.json   # DOM 兜底词典（硬编码文案）
 │   └── locales/      # 178 个命名空间的中文词条，一个模块一个文件
 └── dist/
     └── pm-chinese-runtime.js  # 构建产物（钩子 + 内联词库）
