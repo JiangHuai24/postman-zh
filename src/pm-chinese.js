@@ -104,4 +104,80 @@
       return send.apply(this, arguments);
     };
   }
+
+  // ---- 硬编码 / 服务端下发文案的 DOM 兜底 ----
+  // 只做「整串精确匹配」，跳过输入框与代码编辑器，避免改到用户输入。
+  var DOM_DICT = __PM_ZH_DOM__;
+
+  function shouldSkip(node) {
+    for (var el = node.parentElement; el; el = el.parentElement) {
+      if (el.isContentEditable) return true;
+      var tag = el.tagName;
+      if (tag === 'INPUT' || tag === 'TEXTAREA' || tag === 'SELECT' || tag === 'CODE' || tag === 'PRE') return true;
+      var cls = typeof el.className === 'string' ? el.className : '';
+      if (cls && (/cm-editor|CodeMirror|monaco-editor|ace_editor|ProseMirror/.test(cls))) return true;
+    }
+    return false;
+  }
+
+  function translateNode(node) {
+    var raw = node.nodeValue;
+    if (!raw) return;
+    var trimmed = raw.trim();
+    if (!trimmed || trimmed.length > 80) return;
+    var hit = DOM_DICT[trimmed];
+    if (hit === undefined || hit === trimmed) return;
+    if (shouldSkip(node)) return;
+    node.nodeValue = raw.replace(trimmed, hit);
+    window.__PM_ZH_I18N__.domHits = (window.__PM_ZH_I18N__.domHits || 0) + 1;
+  }
+
+  function translateAttrs(el) {
+    if (!el || el.nodeType !== 1) return;
+    var keys = ['aria-label', 'title', 'placeholder', 'alt'];
+    for (var i = 0; i < keys.length; i++) {
+      var v = el.getAttribute(keys[i]);
+      if (v && DOM_DICT[v.trim()] !== undefined) {
+        el.setAttribute(keys[i], DOM_DICT[v.trim()]);
+        window.__PM_ZH_I18N__.domHits = (window.__PM_ZH_I18N__.domHits || 0) + 1;
+      }
+    }
+  }
+
+  function scan(root) {
+    if (!root) return;
+    try {
+      if (root.nodeType === 3) translateNode(root);
+      else if (root.nodeType === 1) {
+        translateAttrs(root);
+        var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, null);
+        var n; while ((n = walker.nextNode())) translateNode(n);
+      }
+    } catch (e) { window.__PM_ZH_I18N__.errors.push('dom:' + e); }
+  }
+
+  function startDomLayer() {
+    if (!Object.keys(DOM_DICT).length) return;
+    scan(document.body);
+    var obs = new MutationObserver(function (records) {
+      for (var i = 0; i < records.length; i++) {
+        var r = records[i];
+        if (r.type === 'childList') {
+          for (var j = 0; j < r.addedNodes.length; j++) scan(r.addedNodes[j]);
+        } else if (r.type === 'characterData') {
+          scan(r.target);
+        } else if (r.type === 'attributes' && r.attributeName) {
+          translateAttrs(r.target);
+        }
+      }
+    });
+    obs.observe(document.documentElement, { childList: true, subtree: true, characterData: true, attributes: true, attributeFilter: ['aria-label', 'title', 'placeholder', 'alt'] });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', startDomLayer);
+  } else {
+    startDomLayer();
+  }
+
 })();

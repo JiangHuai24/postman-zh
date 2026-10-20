@@ -86,5 +86,5 @@
   "results.item.visibility_icon_tooltip.entity_type.request": "请求",
   "results.item.visibility_icon_tooltip.entity_type.environment": "Environment",
   "results.item.visibility_icon_tooltip.entity_type.document": "文档",
-  "results.item.visibility_icon_tooltip.entity_type.mock": "Code Mock"
+  "results.item.visibility_icon_tooltip.entity_type.mock": "代码 Mock"
 }

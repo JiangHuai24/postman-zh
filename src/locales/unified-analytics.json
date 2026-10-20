@@ -397,7 +397,7 @@
   "feature_usage.insight_panels.public_workspaces.tooltip": "在选定时间段内发布到公开 API 网络的工作空间。",
   "feature_usage.insight_panels.public_workspaces.list_title": "顶级工作空间",
   "feature_usage.insight_panels.public_workspaces.value_column": "浏览量",
-  "common.explore_public_api.title": "Explore Postman API",
+  "common.explore_public_api.title": "探索 Postman API ",
   "common.explore_public_api.description": "使用 Postman API 访问此报告的数据。",
   "common.explore_public_api.button": "打开 Postman Analytics API",
   "common.explore_public_api.link_cta": "打开 Postman Analytics API",

@@ -83,7 +83,7 @@
   "pending_request_item.deny": "拒绝",
   "pending_request_item.collection": "{count, plural, one {# 集合} other {# 集合}}",
   "pending_request_item.environment": "{count, plural, one {# 环境} other {# 环境}}",
-  "pending_request_item.api": "{count, plural, one {# API} other {# API}}",
+  "pending_request_item.api": "{count, plural, one {# API} other {# APIs}}",
   "pending_request_item.requester_self": "你",
   "pending_request_item.team_public_profile_modal_description": "在公开团队资料之前，请更新团队域名，并确保其符合公开可见性要求。团队域名有助于在 Postman 上标识你的团队。",
   "pending_request_item.team_public_profile_modal_cta": "继续",

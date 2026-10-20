@@ -264,7 +264,7 @@
   "editor.context_bar.live_collection.description": "使用始终保持最新的集合，简化协作流程。<1><0>了解更多</0></1>",
   "editor.context_bar.live_collection.last_updated.title": "上次更新",
   "editor.context_bar.live_collection.last_updated.available": "有可用更新。<1><0>查看变更</0></1>以更新此集合。",
-  "editor.context_bar.live_collection.last_updated.not_available": "No updates yet. Try <1><0>sending a request</0></1>.",
+  "editor.context_bar.live_collection.last_updated.not_available": "暂无更新。试试 <1><0>发送请求</0></1>。",
   "editor.context_bar.live_collection.status.title": "状态",
   "editor.context_bar.live_collection.status.description": "随时开启或关闭数据采集。",
   "editor.context_bar.live_collection.status.on": "开启",

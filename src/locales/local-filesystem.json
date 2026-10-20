@@ -181,7 +181,7 @@
   "local_mock_publish.simulation_deploy_failed_toast": "模拟部署失败",
   "local_mock_publish.deployment_type_filter_aria_label": "按部署类型筛选",
   "local_mock_publish.deployment_type_filter_all": "全部类型",
-  "local_mock_publish.deployment_type_filter_code_mock": "Code Mock",
+  "local_mock_publish.deployment_type_filter_code_mock": "代码 Mock",
   "local_mock_publish.deployment_type_filter_simulation": "模拟",
   "local_mock_publish.mock_server_workbench_view_configuration_label": "查看模拟",
   "local_mock_publish.mock_server_workbench_view_mock_label": "查看模拟服务器",

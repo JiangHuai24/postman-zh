@@ -174,7 +174,7 @@
   "workspaceNotifications.pagination.range": "第 {start}-{end} 条，共 {total} 条",
   "workspaceNotifications.modal.createHeading": "连接频道",
   "workspaceNotifications.modal.editHeading": "编辑频道集成",
-  "workspaceNotifications.modal.postmanWorkspaceLabel": "Postman Workspace",
+  "workspaceNotifications.modal.postmanWorkspaceLabel": "Postman 工作区",
   "workspaceNotifications.modal.postmanWorkspacePlaceholder": "选择工作区",
   "workspaceNotifications.modal.slackWorkspaceLabel": "{appName} 工作区",
   "workspaceNotifications.modal.slackWorkspacePlaceholder": "选择工作区",

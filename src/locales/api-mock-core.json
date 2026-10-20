@@ -42,7 +42,7 @@
   "mock_start_history.cli_by_other": "postman 模拟服务器 run · 由 {who} 执行 · {when}",
   "mock_start_history.ci_meta": "{who} · {when}",
   "mock_start_history.yesterday": "昨天 {time}",
-  "mock_start_history.other_day": "{date} {time}",
+  "mock_start_history.other_day": "{date}，{time}",
   "mock_start_history.calls": "{count, plural, one {# 次调用} other {# 次调用}}",
   "mock_start_history.running_duration": "已运行 {duration}",
   "mock_start_history.ran_duration": "运行了 {duration}",

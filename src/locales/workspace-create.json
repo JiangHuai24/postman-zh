@@ -201,8 +201,8 @@
   "partner_workspace_trial.loading_page.description": "正在创建 Partner 工作区……",
   "partner_workspace_trial.workspace_visibility_radio_tooltip": "免费与外部合作伙伴和客户协作。",
   "partner_domain_validation_error.title": "无法发送邀请",
-  "partner_domain_validation_error.message_with_domains": "Looks like {domainList} users are part of your organization. They can only be invited as Team members.",
-  "partner_domain_validation_error.message_with_domains_partner": "Looks like {domainList} users are part of publisher's organization. They can only be invited as Team members.",
-  "partner_domain_validation_error.message_fallback": "Partner invites are not allowed for the specified domains.",
+  "partner_domain_validation_error.message_with_domains": "看来 {domainList} 用户属于你的组织。他们只能被邀请为团队成员。",
+  "partner_domain_validation_error.message_with_domains_partner": "看来 {domainList} 用户属于发布者的组织。他们只能被邀请为团队成员。",
+  "partner_domain_validation_error.message_fallback": "指定的域不允许邀请合作伙伴。",
   "partner_domain_validation_error.learn_more": "了解更多"
 }

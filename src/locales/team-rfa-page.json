@@ -30,7 +30,7 @@
   "toast_content.default_error.title": "请求发送失败",
   "toast_content.default_error.description": "线路出了点小问题，请重试。",
   "toast_content.verification_email_sent.title": "邮件已发送",
-  "toast_content.verification_email_sent.description": "Please check your inbox for the latest verification email.",
+  "toast_content.verification_email_sent.description": "请检查收件箱中的最新验证邮件。 ",
   "toast_content.invite_resent.title": "邮件已发送",
   "toast_content.invite_resent.description": "请查收邮箱中的最新邀请。",
   "toast_content.invite_error.title": "邮件发送失败",

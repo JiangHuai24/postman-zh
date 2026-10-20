@@ -17,10 +17,15 @@ for (const file of fs.readdirSync(localesDir).filter((f) => f.endsWith('.json'))
   keys += Object.keys(dict).length;
 }
 
+const domPath = path.join(root, 'src', 'dom-zh.json');
+const domDict = fs.existsSync(domPath) ? JSON.parse(fs.readFileSync(domPath, 'utf8')) : {};
+
 const hook = fs.readFileSync(hookPath, 'utf8');
 if (!hook.includes('__PM_ZH_DATA__')) throw new Error('hook missing __PM_ZH_DATA__ placeholder');
 
-const runtime = hook.replace('__PM_ZH_DATA__', () => JSON.stringify(data));
+const runtime = hook
+  .split('__PM_ZH_DOM__').join(JSON.stringify(domDict))
+  .replace('__PM_ZH_DATA__', () => JSON.stringify(data));
 fs.mkdirSync(path.join(root, 'dist'), { recursive: true });
 fs.writeFileSync(path.join(root, 'dist', 'pm-chinese-runtime.js'), runtime);
 console.log(`built dist/pm-chinese-runtime.js  namespaces=${Object.keys(data).length}  keys=${keys}  size=${(runtime.length / 1024).toFixed(0)}KB`);

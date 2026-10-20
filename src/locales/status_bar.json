@@ -32,7 +32,7 @@
   "vault.adoption_popup.description": "尝试保险库在本地存储机密，加密，并在请求、测试脚本、授权、环境等中使用它们。",
   "vault.local.label": "本地保险库",
   "vault.shared.label": "共享保险库",
-  "vault.passport_secrets.label": "Passport Secrets",
+  "vault.passport_secrets.label": "Passport 密钥",
   "agent_selection.auto_agent_label": "自动选择代理",
   "agent_selection.popover.heading": "选择 Postman 代理",
   "agent_selection.popover.auto_select_heading": "自动选择",

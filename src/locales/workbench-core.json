@@ -480,7 +480,7 @@
   "unsaved-changes-modal.footer.discard_changes": "放弃更改",
   "unsaved-changes-modal.footer.overwrite": "保存并覆盖",
   "unsaved-changes-modal.footer.saves_as_new": "另存为新 {modelType}",
-  "unsaved-changes-modal.footer.fork_collection": "Fork Collection",
+  "unsaved-changes-modal.footer.fork_collection": "分叉集合",
   "tab_title_status.conflict": "冲突",
   "tab_title_status.deleted": "已删除",
   "tab_search.recently_closed": "最近关闭",

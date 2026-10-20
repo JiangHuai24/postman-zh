@@ -1,5 +1,5 @@
 {
-  "entity_type_icon.label": "Mock Server",
+  "entity_type_icon.label": "Mock 服务器",
   "dependency_actions.update.label": "更新",
   "dependency_actions.delete.label": "删除",
   "status_indicator.running": "状态：运行中",

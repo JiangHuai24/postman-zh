@@ -9,7 +9,7 @@
   "form.name_default": "新建模拟服务器",
   "form.name_placeholder": "你想模拟的服务或功能",
   "form.name_required_tooltip": "为模拟服务器命名以继续。",
-  "form.url_label": "Mock URL",
+  "form.url_label": "模拟 URL",
   "form.local_port_label": "端口",
   "form.local_url_helper": "",
   "form.check_availability_cta": "检查",

@@ -42,7 +42,7 @@
   "next_actions.default_heading": "已创建模拟服务器和集合",
   "next_actions.default_sub_heading": "为方便管理，它们均命名为 <0>{selectedOptionsName}</0>。",
   "next_actions.mock_server_created_heading": "已创建模拟服务器",
-  "next_actions.try_it_out": "Try it out:",
+  "next_actions.try_it_out": "试一试：",
   "next_actions.call_mock_server": "要调用该模拟服务器：",
   "next_actions.learn_about_examples": "<0><0>为模拟服务器将返回的每个请求添加示例响应。</0><1><0>了解什么是示例以及如何使用它们</0></1></0>",
   "next_actions.private_option_content": "<0>在请求中添加 <1>x-api-key</1> 请求头。<3><0>生成 Postman API key</0></3></0>",

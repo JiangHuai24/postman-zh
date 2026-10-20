@@ -19,7 +19,7 @@
   "search.previous_match": "上一个匹配项",
   "search.next_match": "下一个匹配项",
   "search.close": "关闭搜索",
-  "search.match_count": "{current}/{total}",
+  "search.match_count": "{current} / {total}",
   "search.no_results": "没有结果",
   "context_menu.copy": "复制",
   "context_menu.paste": "粘贴",

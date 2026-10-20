@@ -30,13 +30,10 @@ for (const f of files) {
   blobs.push({ path: f.rel, sha: j.sha, mode: '100644', type: 'blob' });
 }
 const tree = await api('/repos/' + repoFull + '/git/trees', { method: 'POST', body: JSON.stringify({ tree: blobs }) });
-console.log('tree', tree.sha);
 const ref = await api('/repos/' + repoFull + '/git/ref/heads/' + branch);
-const parents = [ref.object.sha];
-console.log('parent', ref.object.sha);
-const commit = await api('/repos/' + repoFull + '/git/commits', { method: 'POST', body: JSON.stringify({ message, tree: tree.sha, parents }) });
-console.log('commit', commit.sha);
+const commit = await api('/repos/' + repoFull + '/git/commits', { method: 'POST', body: JSON.stringify({ message, tree: tree.sha, parents: [ref.object.sha] }) });
 await api('/repos/' + repoFull + '/git/refs/heads/' + branch, { method: 'PATCH', body: JSON.stringify({ sha: commit.sha, force: false }) });
 const check = await api('/repos/' + repoFull + '/git/ref/heads/' + branch);
+console.log('commit', commit.sha);
 console.log('REMOTE ' + check.object.sha);
 console.log('MATCH ' + (check.object.sha === commit.sha));

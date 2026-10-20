@@ -101,7 +101,7 @@
   "mock_bindings.mock_aria_label": "Mock",
   "mock_bindings.select_mock_placeholder": "选择模拟服务器",
   "mock_bindings.mocks_group": "Mock",
-  "mock_bindings.mock_servers_group": "Mock Server",
+  "mock_bindings.mock_servers_group": "Mock 服务器",
   "mock_bindings.create_with_ai": "使用 AI 创建",
   "mock_bindings.create_new_mock": "新建模拟服务器",
   "mock_bindings.scenario_aria_label": "场景",

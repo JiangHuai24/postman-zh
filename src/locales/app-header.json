@@ -404,7 +404,7 @@
   "dropdown.filters.element_types.request_plural": "请求",
   "dropdown.filters.element_types.environment_plural": "环境",
   "dropdown.filters.element_types.document_plural": "文档",
-  "dropdown.filters.element_types.code_mock_plural": "Code Mock",
+  "dropdown.filters.element_types.code_mock_plural": "代码 Mock",
   "dropdown.filters.element_types.flow_plural": "流量",
   "dropdown.filters.element_types.team_plural": "团队",
   "dropdown.filters.element_types.folder_plural": "文件夹",
