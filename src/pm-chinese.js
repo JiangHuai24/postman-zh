@@ -120,15 +120,38 @@
     return false;
   }
 
+  // 短词（Headers/Body/Docs 等）只在按钮/标签页上下文里替换，
+  // 避免误伤响应正文或用户数据里出现的同名文本。
+  function inButtonContext(node) {
+    var el = node.parentElement, depth = 0;
+    while (el && depth++ < 6) {
+      var tag = el.tagName;
+      if (tag === 'BUTTON' || tag === 'A') return true;
+      var role = el.getAttribute && el.getAttribute('role');
+      if (role === 'button' || role === 'tab' || role === 'menuitem') return true;
+      el = el.parentElement;
+    }
+    return false;
+  }
+
+  function lookup(trimmed) {
+    var hit = DOM_DICT[trimmed];
+    if (hit !== undefined) return { text: hit, btnOnly: false };
+    hit = DOM_DICT['@btn:' + trimmed];
+    if (hit !== undefined) return { text: hit, btnOnly: true };
+    return null;
+  }
+
   function translateNode(node) {
     var raw = node.nodeValue;
     if (!raw) return;
     var trimmed = raw.trim();
     if (!trimmed || trimmed.length > 80) return;
-    var hit = DOM_DICT[trimmed];
-    if (hit === undefined || hit === trimmed) return;
+    var found = lookup(trimmed);
+    if (!found || found.text === trimmed) return;
+    if (found.btnOnly && !inButtonContext(node)) return;
     if (shouldSkip(node)) return;
-    node.nodeValue = raw.replace(trimmed, hit);
+    node.nodeValue = raw.replace(trimmed, found.text);
     window.__PM_ZH_I18N__.domHits = (window.__PM_ZH_I18N__.domHits || 0) + 1;
   }
 
@@ -137,8 +160,10 @@
     var keys = ['aria-label', 'title', 'placeholder', 'alt'];
     for (var i = 0; i < keys.length; i++) {
       var v = el.getAttribute(keys[i]);
-      if (v && DOM_DICT[v.trim()] !== undefined) {
-        el.setAttribute(keys[i], DOM_DICT[v.trim()]);
+      if (!v) continue;
+      var found = lookup(v.trim());
+      if (found && found.text !== v.trim()) {
+        el.setAttribute(keys[i], found.text);
         window.__PM_ZH_I18N__.domHits = (window.__PM_ZH_I18N__.domHits || 0) + 1;
       }
     }

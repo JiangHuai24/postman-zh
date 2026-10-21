@@ -53,6 +53,13 @@ node scripts/inject.mjs --restore
 
 DOM 词典在 src/dom-zh.json，可自行增补。
 
+两条防误伤规则：
+
+1. 跳过 input/textarea/code/pre、contenteditable 与 CodeMirror/Monaco 子树；
+2. 短词（`Headers`、`Body`、`Docs` 等）在词典里加 `@btn:` 前缀，表示**只在按钮/标签页上下文替换**，避免误伤响应正文里出现的同名文本。
+
+覆盖范围包含付费引导弹窗（升级套餐、价格、权益清单等）——这些文案由服务端下发，不在语言包里。
+
 ## 目录结构
 
 ```

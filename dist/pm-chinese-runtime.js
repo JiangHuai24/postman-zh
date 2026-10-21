@@ -107,7 +107,7 @@
 
   // ---- 硬编码 / 服务端下发文案的 DOM 兜底 ----
   // 只做「整串精确匹配」，跳过输入框与代码编辑器，避免改到用户输入。
-  var DOM_DICT = {"Collections":"集合","Environments":"环境","Documents":"文档","Specs":"规格","Mocks":"模拟","Datasets":"数据集","Toolsets":"工具集","Flows":"流程","Environment":"环境","Connect":"连接","Upgrade":"升级","New Chat":"新对话","Auto":"自动","Start using Agent Mode!":"开始使用 Agent 模式！","Your plan includes":"你的方案包含","AI credits":"AI 额度","per month to use Agent Mode.":"每月可用于 Agent 模式。","Describe what you need. Press @ for context, / for Skills.":"描述你的需求。按 @ 添加上下文，按 / 选择技能。","Add a summary to outline the purpose of this workspace.":"添加摘要以说明此工作区的用途。","Pin collections":"置顶集合","Add workspace README":"添加工作区 README","Write with AI":"使用 AI 撰写","Open Folder":"打开文件夹","Terminal":"终端","Console":"控制台","Globals":"全局变量","Vault":"保险库","Tools":"工具","Invite":"邀请","Search":"搜索","Overview":"概述","Updates":"更新","Apps":"应用","Settings":"设置","Home":"首页","Workspaces":"工作区","Teams":"团队","Integrations":"集成","Reports":"报告","New Collection":"新建集合","New Request":"新建请求","New Folder":"新建文件夹","New Environment":"新建环境","Run":"运行","Authorization":"授权","Scripts":"脚本","Variables":"变量","Runs":"运行记录","Help people understand your collection by adding a description.":"添加描述，帮助他人理解这个集合。","Top templates for you":"为你推荐的模板","View all":"查看全部","REST API basics":"REST API 基础","Integration testing basics":"集成测试基础","API documentation":"API 文档","API scenario testing":"API 场景测试","View complete documentation":"查看完整文档","No auth configured":"未配置授权","Select an authorization type for requests in this":"为此集合中的请求选择授权类型","Basic Auth":"Basic Auth","Bearer Token":"Bearer Token","API Key":"API Key","Before request":"请求前","After response":"响应后","Write scripts to be run before each HTTP request is sent":"编写在每个 HTTP 请求发送前运行的脚本","Packages":"包","Snippets":"代码片段","Variable":"变量","Value":"值","Share":"分享","Publish docs":"发布文档","Write scripts to be run after each HTTP response is received":"编写在每个 HTTP 响应接收后运行的脚本","Add a request":"添加请求","This collection is empty. Add a request to get started.":"此集合为空。添加一个请求以开始使用。","Add request":"添加请求","Ready to go":"准备就绪","Fern":"Fern","Digest Auth":"Digest Auth","HAWK":"HAWK","JWT":"JWT","OAuth 1.0":"OAuth 1.0","OAuth 2.0":"OAuth 2.0","Akamai EdgeGrid":"Akamai EdgeGrid","ASAP":"ASAP","AWS Signature":"AWS 签名","NTLM":"NTLM"};
+  var DOM_DICT = {"Collections":"集合","Environments":"环境","Documents":"文档","Specs":"规格","Mocks":"模拟","Datasets":"数据集","Toolsets":"工具集","Flows":"流程","Environment":"环境","Connect":"连接","Upgrade":"升级","New Chat":"新对话","Auto":"自动","Start using Agent Mode!":"开始使用 Agent 模式！","Your plan includes":"你的方案包含","AI credits":"AI 额度","per month to use Agent Mode.":"每月可用于 Agent 模式。","Describe what you need. Press @ for context, / for Skills.":"描述你的需求。按 @ 添加上下文，按 / 选择技能。","Add a summary to outline the purpose of this workspace.":"添加摘要以说明此工作区的用途。","Pin collections":"置顶集合","Add workspace README":"添加工作区 README","Write with AI":"使用 AI 撰写","Open Folder":"打开文件夹","Terminal":"终端","Console":"控制台","Globals":"全局变量","Vault":"保险库","Tools":"工具","Invite":"邀请","Search":"搜索","Overview":"概述","Updates":"更新","Apps":"应用","Settings":"设置","Home":"首页","Workspaces":"工作区","Teams":"团队","Integrations":"集成","Reports":"报告","New Collection":"新建集合","New Request":"新建请求","New Folder":"新建文件夹","New Environment":"新建环境","Run":"运行","Authorization":"授权","Scripts":"脚本","Variables":"变量","Runs":"运行记录","Help people understand your collection by adding a description.":"添加描述，帮助他人理解这个集合。","Top templates for you":"为你推荐的模板","View all":"查看全部","REST API basics":"REST API 基础","Integration testing basics":"集成测试基础","API documentation":"API 文档","API scenario testing":"API 场景测试","View complete documentation":"查看完整文档","No auth configured":"未配置授权","Select an authorization type for requests in this":"为此集合中的请求选择授权类型","Basic Auth":"Basic Auth","Bearer Token":"Bearer Token","API Key":"API Key","Before request":"请求前","After response":"响应后","Write scripts to be run before each HTTP request is sent":"编写在每个 HTTP 请求发送前运行的脚本","Packages":"包","Snippets":"代码片段","Variable":"变量","Value":"值","Share":"分享","Publish docs":"发布文档","Write scripts to be run after each HTTP response is received":"编写在每个 HTTP 响应接收后运行的脚本","Add a request":"添加请求","This collection is empty. Add a request to get started.":"此集合为空。添加一个请求以开始使用。","Add request":"添加请求","Ready to go":"准备就绪","Fern":"Fern","Digest Auth":"Digest Auth","HAWK":"HAWK","JWT":"JWT","OAuth 1.0":"OAuth 1.0","OAuth 2.0":"OAuth 2.0","Akamai EdgeGrid":"Akamai EdgeGrid","ASAP":"ASAP","AWS Signature":"AWS 签名","NTLM":"NTLM","No items in this panel":"此面板中没有项目","Create":"创建","Upgrade to the Solo plan to access more features":"升级到 Solo 方案以解锁更多功能","Upgrade to the Team plan to invite people":"升级到 Team 方案以邀请成员","For individuals who want to move faster with AI and automation":"适合希望借助 AI 与自动化提速的个人","For teams building and shipping APIs together":"适合协作开发与交付 API 的团队","For organizations building, managing, and distributing APIs at scale":"适合大规模构建、管理与分发 API 的组织","Pricing reflects annual plans":"价格按年付方案计算","Continue with Solo Plan":"继续使用 Solo 方案","Continue with Team Plan":"继续使用 Team 方案","Start Solo Trial":"开始 Solo 试用","Start Team Trial":"开始 Team 试用","plan includes:":"方案包含：","Everything in":"包含 ",", and":" 的全部功能，以及","per":"/","seat":"席位","/ month":"/ 月","More AI credits and uninterrupted AI access (overage charges apply)":"更多 AI 额度与不间断的 AI 访问（超出部分另行计费）","Native Git":"原生 Git","Unlimited specs, mock servers and manual flows":"不限数量的规格、模拟服务器与手动流程","Unlimited Collection Runner & Performance Testing runs":"不限次数的 Collection Runner 与性能测试运行","Data-driven testing with exports":"数据驱动测试并支持导出","Unlimited private NPM packages & library":"不限数量的私有 NPM 包与组件库","Custom-branded documentation":"自定义品牌的文档","Unlimited custom domains":"不限数量的自定义域名","API monitoring":"API 监控","Team collaboration":"团队协作","Unlimited workspace & collection viewers":"不限数量的工作区与集合查看者","Basic Role Based Access Control (RBAC)":"基础的角色权限控制（RBAC）","SDK generation":"SDK 生成","Simple security (add-on)":"基础安全（附加项）","@btn:Docs":"文档","@btn:Params":"参数","@btn:Headers":"请求头","@btn:Body":"请求体","@btn:Cookie":"Cookie","@btn:Cookies":"Cookie","@btn:Save Response":"保存响应","@btn:Save":"保存","@btn:Send":"发送","@btn:Cancel":"取消","@btn:Debug with AI":"用 AI 调试","@btn:Share":"分享","@btn:Run":"运行","@btn:Create":"创建","@btn:Invite":"邀请","@btn:Upgrade":"升级","Response":"响应","@btn:Send + Get a successful response":"发送 + 获得成功响应","@btn:Send + Visualize response":"发送 + 可视化响应","@btn:Send + Write tests":"发送 + 编写测试","@btn:Send + Save response example":"发送 + 保存响应示例","@btn:Load test":"负载测试"};
 
   function shouldSkip(node) {
     for (var el = node.parentElement; el; el = el.parentElement) {
@@ -120,15 +120,38 @@
     return false;
   }
 
+  // 短词（Headers/Body/Docs 等）只在按钮/标签页上下文里替换，
+  // 避免误伤响应正文或用户数据里出现的同名文本。
+  function inButtonContext(node) {
+    var el = node.parentElement, depth = 0;
+    while (el && depth++ < 6) {
+      var tag = el.tagName;
+      if (tag === 'BUTTON' || tag === 'A') return true;
+      var role = el.getAttribute && el.getAttribute('role');
+      if (role === 'button' || role === 'tab' || role === 'menuitem') return true;
+      el = el.parentElement;
+    }
+    return false;
+  }
+
+  function lookup(trimmed) {
+    var hit = DOM_DICT[trimmed];
+    if (hit !== undefined) return { text: hit, btnOnly: false };
+    hit = DOM_DICT['@btn:' + trimmed];
+    if (hit !== undefined) return { text: hit, btnOnly: true };
+    return null;
+  }
+
   function translateNode(node) {
     var raw = node.nodeValue;
     if (!raw) return;
     var trimmed = raw.trim();
     if (!trimmed || trimmed.length > 80) return;
-    var hit = DOM_DICT[trimmed];
-    if (hit === undefined || hit === trimmed) return;
+    var found = lookup(trimmed);
+    if (!found || found.text === trimmed) return;
+    if (found.btnOnly && !inButtonContext(node)) return;
     if (shouldSkip(node)) return;
-    node.nodeValue = raw.replace(trimmed, hit);
+    node.nodeValue = raw.replace(trimmed, found.text);
     window.__PM_ZH_I18N__.domHits = (window.__PM_ZH_I18N__.domHits || 0) + 1;
   }
 
@@ -137,8 +160,10 @@
     var keys = ['aria-label', 'title', 'placeholder', 'alt'];
     for (var i = 0; i < keys.length; i++) {
       var v = el.getAttribute(keys[i]);
-      if (v && DOM_DICT[v.trim()] !== undefined) {
-        el.setAttribute(keys[i], DOM_DICT[v.trim()]);
+      if (!v) continue;
+      var found = lookup(v.trim());
+      if (found && found.text !== v.trim()) {
+        el.setAttribute(keys[i], found.text);
         window.__PM_ZH_I18N__.domHits = (window.__PM_ZH_I18N__.domHits || 0) + 1;
       }
     }
