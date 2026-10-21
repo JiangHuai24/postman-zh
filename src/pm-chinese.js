@@ -116,6 +116,8 @@
       if (tag === 'INPUT' || tag === 'TEXTAREA' || tag === 'SELECT' || tag === 'CODE' || tag === 'PRE') return true;
       var cls = typeof el.className === 'string' ? el.className : '';
       if (cls && (/cm-editor|CodeMirror|monaco-editor|ace_editor|ProseMirror/.test(cls))) return true;
+      // 响应/预览/代码展示区一律不动，避免影响返回内容的阅读与复制
+      if (cls && (/response|json-viewer|code-viewer|preview|response-body|renderer/i.test(cls))) return true;
     }
     return false;
   }

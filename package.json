@@ -1,6 +1,6 @@
 {
   "name": "postman-zh",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Postman 桌面版简体中文界面注入工具 —— 拦截远程语言包，运行时替换为中文",
   "private": true,
   "type": "module",

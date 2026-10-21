@@ -56,7 +56,10 @@ DOM 词典在 src/dom-zh.json，可自行增补。
 两条防误伤规则：
 
 1. 跳过 input/textarea/code/pre、contenteditable 与 CodeMirror/Monaco 子树；
-2. 短词（`Headers`、`Body`、`Docs` 等）在词典里加 `@btn:` 前缀，表示**只在按钮/标签页上下文替换**，避免误伤响应正文里出现的同名文本。
+2. 短词（`Headers`、`Body`、`Docs` 等）在词典里加 `@btn:` 前缀，表示**只在按钮/标签页上下文替换**；
+3. 响应区、预览区、代码展示区（class 含 `response`/`json-viewer`/`preview` 等）整体不替换，避免影响阅读与复制。
+
+取舍原则：会影响返回数据或功能使用的文案，宁可保留英文。
 
 覆盖范围包含付费引导弹窗（升级套餐、价格、权益清单等）——这些文案由服务端下发，不在语言包里。
 
